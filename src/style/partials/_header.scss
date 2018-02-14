@@ -1,0 +1,186 @@
+.header {
+    height: 160px;
+
+    background-color: #fff;
+    .logo {
+        margin-top: 50px;
+        .logoImage {
+            float: left;
+        }
+        .logoFirstWord {
+            float: left;
+
+            color: #1f232b;
+        }
+        .logoSecondWord {
+            float: left;
+
+            color: #54be73;
+        }
+        @include respond-to(xs) {
+            width: 80%;
+        }
+    }
+    .headerNav {
+        display: none;
+        margin-top: 70px;
+        @include respond-to(xlg) {
+            display: block;
+        }
+        .headerNavItem {
+            float: left;
+
+            margin-left: 50px;
+            &:first-child {
+                margin-left: 24px;
+            }
+        }
+        .headerNavLink {
+            transition: color .25s ease;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            color:  #1f232b;
+
+            font-family: Montserrat;
+            font-size: 12px;/* Приближение из-за подстановки шрифтов */
+            font-weight: 600;
+            &:hover {
+                transition: color .25s ease;
+
+                color: #54be73;
+            }
+        }
+    }
+    .headerCallBtn {
+        float: right;
+        margin-top: 55px;
+        @include respond-to(lg) {
+            margin-left: 50%;
+        }
+        @include respond-to(sm) {
+            display: none;
+        }
+        @include respond-to(xs) {
+            display: none;
+        }
+        @include button;
+        a {
+            padding-top: 14px;
+        }
+    }
+}
+
+.offcanvasMenu {
+	display: none;
+    margin-top: 64px;
+    text-align: right;
+	@include respond-to(lg) {
+		display: block;
+	}
+    @include respond-to(md) {
+        display: block;
+    }
+    @include respond-to(sm) {
+        display: block;
+        margin-left: 58%;
+    }
+    @include respond-to(xs) {
+        display: block;
+        width: 20%;
+    }
+}
+
+.headerCarousel {
+    width: 100%;
+    .headerCarouselThinTitle {
+        margin-top: 190px;
+
+        color: #f0f0f1;
+    }
+    .headerCarouselBoldTitle {
+        color:  #ffffff;
+    }
+    .headerCarouselImage {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: auto;
+    }
+    .headerCarouselItem {
+        width: 100%;
+        .headerCarouselBtn {
+            margin-top: 60px;
+
+            line-height: 50px;
+
+            @include button2;
+
+            margin-bottom: 190px;
+        }
+        .slide1 {
+        }
+        .slide2 {
+            .headerCarouselThinTitle {
+                text-align: center;
+            }
+            .headerCarouselBoldTitle {
+                text-align: center;
+            }
+            .headerCarouselBtn {
+                margin: 0 auto;
+                margin-bottom: 190px;
+                margin-top: 60px;
+            }
+        }
+        .slide3 {
+            .headerCarouselThinTitle {
+                text-align: center;
+            }
+            .headerCarouselBoldTitle {
+                text-align: center;
+            }
+            .headerCarouselBtn {
+                margin: 0 auto;
+                margin-bottom: 190px;
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+.headerCarouselDots {
+    position: relative;
+    ul {
+        position: absolute;
+        bottom: 40px;
+        left: 48.5%;
+        li {
+            display: inline-block;
+
+            width: 6px;
+            height: 6px;
+            margin-left: 14px;
+
+            cursor: pointer;
+            transition: background-color .25s ease;
+
+            border-radius: 100%;
+            background-color: #4c4f55;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:hover {
+                transition: background-color .25s ease;
+
+                background-color: #54be73;
+            }
+            button {
+                display: none;
+            }
+        }
+        li.slick-active {
+            background-color: #54be73;
+        }
+    }
+}

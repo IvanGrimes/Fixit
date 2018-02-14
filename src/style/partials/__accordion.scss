@@ -1,0 +1,90 @@
+.collapse {
+    display: none;
+}
+.show {
+    display: block;
+}
+.collapsing {
+    position: relative;
+
+    overflow: hidden;
+
+    height: 0;
+
+    transition: height 0.5s ease;
+}
+
+.accordionBlock {
+    margin-top: 60px;
+
+    .accordionItem {
+        margin-top: 10px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    
+
+    .accordionHeader {
+
+    }
+
+    .accordionTitle {
+        position: relative;
+
+        display: block;
+
+        height: 50px;
+        padding-left: 30px;
+
+        text-transform: uppercase;
+
+        color:  #ffffff;
+        background-color: #54be73;
+
+        font-family: Montserrat;
+        font-size: 12px;/* Приближение из-за подстановки шрифтов */
+        font-weight: 600;
+        line-height: 51px;/* Приближение из-за подстановки шрифтов */
+        &[aria-expanded="true"] {
+            &::before {
+                position: absolute;
+                right: 30px;
+
+                content: "-"; /* Unicode character for "minus" sign (-) */
+
+                color:  #ffffff;
+
+                font-family: Montserrat;
+                font-size: 14px;/* Приближение из-за подстановки шрифтов */
+                font-weight: 600;
+            }
+        }
+        &[aria-expanded="false"] {
+            &::before {
+                position: absolute;
+                right: 30px;
+
+                content: '+'; /* Unicode character for "plus" sign (+) */
+
+                color:  #ffffff;
+
+                font-family: Montserrat;
+                font-size: 14px;/* Приближение из-за подстановки шрифтов */
+                font-weight: 600;
+            }
+        }
+    }
+
+    .accordionBody {
+
+        background-color: #fff;
+
+    }
+    .accordionParagraph {
+        padding-top: 20px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+    }
+}

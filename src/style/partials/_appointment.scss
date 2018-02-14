@@ -1,0 +1,217 @@
+.appointment {
+	position: relative;
+
+	padding-top: 160px;
+	padding-bottom: 160px;
+	background-color: #1f232b;
+	@include respond-to(sm) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	@include respond-to(xs) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	&:before {
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		left: 0;
+
+		display: block;
+
+		width: 100%;
+		height: 100%;
+
+		content: '';
+
+		opacity: .05;
+		background-image: url(../img/texture.png);
+	}
+
+	.appointmentBlock {
+		position: relative;
+		z-index: 2;
+
+    }
+
+	.appointmentTitle {
+		text-align: center;
+        text-transform: uppercase;
+
+		color: #fff;
+	}
+
+	span {
+		display: block;
+
+		margin-top: 30px;
+
+		text-align: center;
+
+		color: #818181;
+
+		font-family: Montserrat;
+		font-size: 20px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 200;
+		line-height: 30px;/* Приближение из-за подстановки шрифтов */
+	}
+
+	.appointmentForm {
+		margin-top: 60px;
+    }
+
+	input[type='date'] {
+		padding-right: 0;
+	}
+
+	.appointmentName {
+		width: 100%;
+		height: 50px;
+		padding-right: 30px;
+		padding-left: 30px;
+
+		text-align: left;
+		text-transform: uppercase;
+
+		color: #1f232b;
+
+		font-family: Montserrat;
+		font-size: 12px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 300;
+		&::placeholder {
+			text-align: left;
+
+			color: #1f232b;
+
+			font-family: Montserrat;
+			font-size: 12px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 300;
+		}
+	}
+
+	.appointmentPhone {
+		width: 100%;
+		height: 50px;
+		padding-right: 30px;
+		padding-left: 30px;
+
+		text-transform: uppercase;
+
+		color: #1f232b;
+
+		font-family: Montserrat;
+		font-size: 12px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 300;
+		&::placeholder {
+			color: #1f232b;
+
+			font-family: Montserrat;
+			font-size: 12px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 300;
+		}
+		@include respond-to(sm) {
+			margin-top: 30px;
+		}
+		@include respond-to(xs) {
+			margin-top: 30px;
+		}
+	}
+
+	.appointmentDate {
+		width: 100%;
+		height: 50px;
+		padding-right: 30px;
+		padding-left: 30px;
+
+		text-transform: uppercase;
+
+		color: #1f232b;
+
+		font-family: Montserrat;
+		font-size: 12px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 300;
+		&::placeholder {
+			color: #1f232b;
+
+			font-family: Montserrat;
+			font-size: 12px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 300;
+		}
+		@include respond-to(md) {
+			margin-top: 30px;
+		}
+		@include respond-to(sm) {
+			margin-top: 30px;
+		}
+		@include respond-to(xs) {
+			margin-top: 30px;
+		}
+	}
+
+	.appointmentTime {
+		width: 100%;
+		height: 50px;
+		padding-right: 30px;
+		padding-left: 30px;
+
+		text-transform: uppercase;
+
+		color: #1f232b;
+
+		font-family: Montserrat;
+		font-size: 12px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 300;
+		&::placeholder {
+			color: #1f232b;
+
+			font-family: Montserrat;
+			font-size: 12px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 300;
+		}
+		@include respond-to(md) {
+			margin-top: 30px;
+		}
+		@include respond-to(sm) {
+			margin-top: 30px;
+		}
+		@include respond-to(xs) {
+			margin-top: 30px;
+		}
+	}
+
+	.appointmentMessage {
+		width: 100%;
+		height: 100px;
+		margin-top: 30px;
+		padding-top: 20px;
+		padding-right: 30px;
+		padding-left: 30px;
+
+		text-transform: uppercase;
+
+		color: #1f232b;
+		border: 0;
+
+		font-family: Montserrat;
+		font-size: 12px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 300;
+		&::placeholder {
+			color: #1f232b;
+
+			font-family: Montserrat;
+			font-size: 12px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 300;
+		}
+	}
+
+	.appointmentButton {
+		margin: 0 auto;
+
+		margin-top: 55px;
+
+		cursor: pointer;
+
+		@include button2;
+	}
+}

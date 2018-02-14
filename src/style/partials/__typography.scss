@@ -1,0 +1,118 @@
+@include font-face(Montserrat, '../fonts/Montserrat-ExtraLight', 200, ExtraLight, ttf);
+@include font-face(Montserrat, '../fonts/Montserrat-Light', 300, Light, ttf);
+@include font-face(Montserrat, '../fonts/Montserrat-Regular', 400, Regular, ttf);
+@include font-face(Montserrat, '../fonts/Montserrat-SemiBold', 600, SemiBold, ttf);
+@include font-face(Montserrat, '../fonts/Montserrat-Black', 900, Black, ttf);
+
+h1 {
+    font-family: Montserrat;
+    font-size: 3.75em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-size: 3.125em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-size: 2.5em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+}
+
+h4 {
+    font-family: Montserrat;
+    font-size: 1.875em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+}
+
+h5 {
+    font-family: Montserrat;
+    font-size: 1.25em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+}
+
+h6 {
+    font-family: Montserrat;
+    font-size: 1em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+}
+
+strong {
+    font-family: Montserrat;
+    font-size: 80px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+}
+
+pre { /*для надписей в каруселе, номеров телефона в разделе callus, welcome над aboutus в home*/
+    font-family: Montserrat;
+    font-size: 30px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 200;
+}
+
+em { /*заголовки в разделе services*/
+    font-family: Montserrat;
+    font-size: 20px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 200;
+}
+
+p {
+    font-family: Montserrat;
+    color:  #818181;
+    font-size: 1em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 1.5em;/* Приближение из-за подстановки шрифтов */
+}
+
+blockquote {
+    font-family: Montserrat;
+    color:  #818181;
+    font-size: 1.25em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 1.65em;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+.ul {
+    list-style: none;
+    .li {
+        font-family: Montserrat;
+        color:  #1f232b;
+        font-size: 1em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 1.875em;/* Приближение из-за подстановки шрифтов */
+        &:before {
+            content: "\f00c"; /* FontAwesome Unicode */
+            font-family: FontAwesome;
+            margin-right: 18px;
+            color:  #54be73;
+            font-size: 0.875em;/* Приближение из-за подстановки шрифтов */
+            font-weight: 400;
+            line-height: 1.875em;/* Приближение из-за подстановки шрифтов */
+        }
+    }
+}
+
+ol {
+    counter-reset: item;
+    li {
+        font-family: Montserrat;
+        color:  #1f232b;
+        font-size: 1em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 1.875em;/* Приближение из-за подстановки шрифтов */
+
+        &:before {
+            content: counter(item) ". ";
+            counter-increment: item;
+            font-family: Montserrat;
+            color:  #54be73;
+            font-size: 1em;/* Приближение из-за подстановки шрифтов */
+            font-weight: 600;
+            line-height: 1.875em;/* Приближение из-за подстановки шрифтов */
+            margin-right: 18px;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.about {
+    padding-top: 185px;
+    padding-bottom: 185px;
+    @include respond-to(sm) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @include respond-to(xs) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .aboutLeft {
+        display: none;
+        @include respond-to(xlg) {
+            display: block;
+        }
+        @include respond-to(lg) {
+            display: block;
+        }
+    }
+
+    .aboutMac {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        @include respond-to(lg) {
+            margin-top: 55px;
+        }
+    }
+
+    .aboutMacLine {
+        position: absolute;
+        top: 40px;
+        left: 330px;
+        width: 4px;
+        height: 361px;
+        background-color: #fff;
+        @include respond-to(lg) {
+            height: 302px;
+            left: 278px;
+            top: 55px;
+        }
+    }
+    .aboutMacLogo {
+        position: absolute;
+        top: 185px;
+        left: 45.5%;
+
+        display: block;
+
+        width: 60px;
+        height: 60px;
+
+        content: '';
+        transition: background-color .25s ease;
+
+        border-radius: 100%;
+        background-color: #fff;
+        background-image: url(../img/logos.png);
+        background-repeat: no-repeat;
+        background-position-x: 15px;
+        background-position-y: 10px;
+        &:hover {
+            transition: background-color .25s ease;
+
+            background-color: #54be73;
+            background-image: url(../img/logos2.png);
+        }
+        @include respond-to(lg) {
+            left: 44.5%;
+            top: 170px;
+        }
+    }
+
+    .aboutRight {
+        .aboutBoldTitle {
+            text-transform: uppercase;
+        }
+        .aboutThinTitle {
+        }
+        .aboutParagraph {
+            margin-top: 40px;
+        }
+        .aboutButton {
+            margin-top: 35px;
+
+            line-height: 50px;
+
+            @include button;
+        }
+    }
+}

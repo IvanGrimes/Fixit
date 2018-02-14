@@ -1,0 +1,222 @@
+.footer {
+	position: relative;
+
+	padding-top: 100px;
+	padding-bottom: 150px;
+
+	background-color: #1f232b;
+	@include respond-to(md) {
+
+	}
+	@include respond-to(sm) {
+
+	}
+	@include respond-to(xs) {
+
+	}
+	&:before {
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		left: 0;
+
+		display: block;
+
+		width: 100%;
+		height: 100%;
+
+		content: '';
+
+		opacity: .05;
+		background-image: url(../img/bigtexture.png);
+		background-position: 50% 47%;
+	}
+
+	p {
+		text-align: center;
+	}
+
+	.footerTitle {
+		margin-top: 25px;
+
+		text-align: center;
+		text-transform: uppercase;
+
+		color: #fff;
+	}
+
+	.footerNav {
+		margin-top: 50px;
+	}
+
+	.footerNavItem {
+		display: block;
+
+		transition: color .25s ease;
+		text-align: center;
+
+		color: #818181;
+		border-bottom: 1px solid #363941;
+
+		font-family: Montserrat;
+		font-size: 16px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 300;
+		line-height: 50px;/* Приближение из-за подстановки шрифтов */
+		&:hover {
+			color: #54be73;
+		}
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	.footerInfoBlock {
+		margin-top: 60px;
+	}
+
+	.footerInfoParagraph {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.footerIcon {
+		display: inline-block;
+
+		margin-right: 10px;
+
+		color: #54be73;
+	}
+
+	.footerLink {
+		display: inline-block;
+
+		transition: color .25s ease;
+		text-align: center;
+		text-align: center;
+
+		color: #fff;
+
+		font-family: Montserrat;
+		font-size: 16px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 300;
+		line-height: 24px;/* Приближение из-за подстановки шрифтов */
+		&:hover {
+			color: #54be73;
+		}
+	}
+
+	.footerSocial {
+		width: 90%;
+		margin-top: 35px;
+		margin-left: 5%;
+
+		text-align: center;
+
+		font-family: FontAwesome;
+	}
+
+	.footerSocialItem {
+		display: inline-block;
+
+		width: 40px;
+		height: 40px;
+
+		transition: border-color .25s ease;
+		transition: color .25s ease;
+
+		border: 2px solid;
+		border-radius: 100%;
+
+		line-height: 37px;
+		&:hover {
+			color: #fff;
+			border-color: #54be73;
+		}
+	}
+
+	.first {
+		color: #3b5999;
+		border-color: #3b5999;
+	}
+
+	.second {
+		margin-left: 5px;
+
+		color: #55acee;
+		border-color: #55acee;
+	}
+
+	.third {
+		margin-left: 5px;
+
+		color: #dd4b39;
+		border-color: #dd4b39;
+	}
+
+	.logo {
+		margin-top: 2px;
+
+		text-align: center;
+		.logoImage {
+		}
+		.logoFirstWord {
+			color: #fff;
+		}
+		.logoSecondWord {
+			color: #54be73;
+		}
+	}
+
+	.footerNewsletterBlock {
+		margin-top: 60px;
+		.footerInput {
+			width: 100%;
+			height: 50px;
+			margin-top: 25px;
+			padding-right: 30px;
+			padding-left: 30px;
+
+			text-align: center;
+			text-transform: uppercase;
+
+			color: #1f232b;
+
+			font-family: Montserrat;
+			font-size: 12px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 300;
+			&::placeholder {
+				text-align: center;
+
+				color: #1f232b;
+
+				font-family: Montserrat;
+				font-size: 12px;/* Приближение из-за подстановки шрифтов */
+				font-weight: 300;
+			}
+		}
+		.footerButton {
+			margin: 0 auto;
+			margin-top: 30px;
+
+			cursor: pointer;
+
+			border: none;
+
+			@include button;
+		}
+	}
+}
+
+
+.copyrights {
+	height: 80px;
+
+	background-color: #fff;
+	.copyrightsBlock {
+		p {
+			padding-top: 30px;
+
+			text-align: center;
+		}
+	}
+}
